@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classi</title>
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="table.css">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+  <link rel="icon" href="zoo.png" type="image/icon type">
+
+</head>
+
+<body onload="fetchClassi()">
+
+  <!--NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+    <a class="navbar-brand" href="index.html">
+      <img src="zoo.png" class="icon" alt="">
+    </a>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" id="tit">Zoo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="classi.html">Classi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="add-classi.html">Aggiungi Classi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="animali.html">Animali</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--FINE NAVBAR-->
+
+  <div id="addnew">
+    <h1>Lista delle classi</h1><br>
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col text-center">
+          <a href="add-classi.html"><button type="button" class="btn btn-info" id="btn">Aggiungi</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col text-center">
+        <table class="container" id="tableCla">
+          <thead>
+            <tr>
+              <th onclick="sortTableCla(0)">
+                <h1 class="bi bi-caret-right-fill" id="id" style="color: rgb(206, 35, 35);">ID</h1>
+              </th>
+              <th onclick="sortTableCla(1)">
+                <h1 class="bi bi-caret-right-fill" id="classe">Classe</h1>
+              </th>
+              <th class="center">
+                <h1>Descrizione</h1>
+                <input type="text" id="cerca" placeholder="Cerca!"><button type="button" class="btn btn-success"
+                  id="btn-cerca" onclick="Ricerca()">Cerca</button>
+              </th>
+              <th>
+                <h1>Azioni</h1>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!--Modal Delete-->
+  <div class="modal" id="Modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: red;">Elimina</h5>
+        </div>
+        <div class="modal-body">
+          <p>Sei sicuro di voler eliminare la classe: <strong id="strong-id"></strong> ? <br>Verranno eliminati anche
+            tutti gli animali associati a questa classe.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-close">Annulla</button>
+          <button type="button" class="btn btn-danger" id="btn-eliminaid">ELIMINA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Modal Update-->
+  <div class="modal" id="ModalMod">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" style="color: rgb(255, 196, 0);">MODIFICA</h5>
+        </div>
+        <div class="modal-body">
+          <p>E' stata selezionata la classe:<strong id="strong-id-mod"></strong><br>Modificare i campi che si desidera.
+          </p>
+        </div>
+        <form class="center" method="post" action="classi/modifica" id="form-mod">
+          <div class="form-group">
+            <label for="idclasse-mod" class="label">ID</label>
+            <input type="text" class="form-control" id="idclasse-mod" name="idClasse" readonly>
+            <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+          </div>
+          <div class="form-group">
+            <label for="nome-mod" class="label">Nome</label>
+            <input type="text" class="form-control" id="nome-mod" name="nome" readonly>
+            <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+          </div>
+          <div class="form-group">
+            <label for="descrizione-mod" class="label">Descrizione</label>
+            <textarea class="form-control" id="descrizione-mod" name="descrizione" rows="7"></textarea>
+          </div>
+          <!--<button type="submit" class="btn btn-primary invia">INVIA</button>-->
+        </form>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-close-mod">Annulla</button>
+          <button type="button" class="btn btn-warning" id="btn-modificaid">MODIFICA</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" class="bi bi-arrow-up-circle-fill"></button>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
