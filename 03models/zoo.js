@@ -21,7 +21,10 @@ const animaliSchema = mongoose.Schema({
     //classe : {type: mongoose.Schema.Types.Mixed, default: {"CIao" : {"Prova": "Mammifero"}}},
 });
 
+
 //dichiaro i model
+
+
 const classiModel = mongoose.model("Class",classiSchema);
 const animaliModel = mongoose.model("Animal", animaliSchema);
 
@@ -201,6 +204,7 @@ module.exports = {
             if (err)
                 console.log(err);
             else
+                classiSchema.index({descrizione: "text"});
                 console.log(("Connessione al db avvenuta con successo."));
             
                 /*
