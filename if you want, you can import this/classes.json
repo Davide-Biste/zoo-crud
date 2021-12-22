@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "61bc43a946064ab396f04552"
+  },
+  "idClasse": "b9be",
+  "nome": "Mammiferi",
+  "descrizione": "I mammiferi sono animali le cui femmine partoriscono dei figli che nel primo periodo della vita debbono essere allattati dalla madre. Hanno circolazione del sangue simile a quella dell’uomo, cioè doppia e completa e respirano per mezzo di polmoni. Il corpo è, in tutto o in parte, ricoperto da peli e gli arti che sono in numero di 4 sono adatti alla locomozione sulla terraferma, oppure destinati al volo (Pipistrello), oppure al nuoto (Foca).",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61bc43b746064ab396f04554"
+  },
+  "idClasse": "878d",
+  "nome": "Insettivori",
+  "descrizione": "Sono piccoli Mammiferi che si nutrono principalmente d’insetti e che sono forniti di denti aguzzi allo scopo di poter perforare l’involucro, talvolta duro, che riveste il corpo di alcuni insetti. Sono insettivori: la talpa ed il riccio.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61bc43c346064ab396f04556"
+  },
+  "idClasse": "548d",
+  "nome": "Carnivori",
+  "descrizione": "Sono animali spesso sanguinari e feroci che si nutrono delle carni di altri animali. Hanno dentatura completa con canini molto sviluppati e molari terminanti con creste acute e taglienti. Hanno zampe terminanti con unghie conformate ad artiglio.\n\nI carnivori si dividono in Felini che hanno artigli retrattili (gatto domestico, gatto selvatico, lince, leone, tigre, pantera, leopardo); canidi che non hanno artigli retrattili (cane lupo, sciacallo, volpe); iene dalle gambe anteriori più lunghe di quelle posteriori; Orsi che camminano appoggiando tutta la pianta del piede (Orso bruno e Orso bianco); martore che sono tutte ricercate per la loro pelliccia (martora, faina, ermellino, lontra).",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61bc43cd46064ab396f04558"
+  },
+  "idClasse": "0626",
+  "nome": "Molluschi",
+  "descrizione": "Sono animali dal corpo molle, caratterizzati da alcuni organi quale il piede che è un ispessimento della regione ventrale del corpo ed il mantello che è una ripiegatura della pelle del dorso. Il mantello secerne in molti casi una sostanza calcarea che forma una specie di guscio detto conchiglia che può essere formata di un solo pezzo avvolto a spirale o di due pezzi che si articolano l’uno con l’altro per mezzo di una specie di cerniera.\n\nAlcuni molluschi sono terrestri e respirano per polmoni, altri sono acquatici e respirano per mezzo di branchie.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61bc43d846064ab396f0455a"
+  },
+  "idClasse": "5507",
+  "nome": "Rosicanti",
+  "descrizione": "Sono caratteristici per la loro dentatura nella quale mancano i canini mentre gli incisivi, che sono privi di radice, sono a crescenza continua. I principali rosicanti sono: il coniglio, la lepre, il topo, lo scoiattolo, il castoro ecc..",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61bc43ec46064ab396f0455c"
+  },
+  "idClasse": "d323",
+  "nome": "Uccelli",
+  "descrizione": "La maggior parte di loro hanno la capacità di volare dato che per arti anteriori posseggono delle ali. In questo gruppo fanno parte anche i gallinacei come i galli, tacchini e galline ma loro sono le eccezioni ed infatti non volano.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61bc43f646064ab396f0455e"
+  },
+  "idClasse": "d383",
+  "nome": "Rettili",
+  "descrizione": "Sono vertebrati che camminano strisciando sul terreno, perché o hanno arti brevi e rivolti in fuori o ne mancano del tutto. La loro pelle è rivestita di squame cornee o da piastre ossee. Respirano per mezzo di polmoni ed hanno circolazione del sangue doppia ed incompleta; giacché, essendo il loro cuore diviso in due orecchiette ed un solo ventricolo, il sangue arterioso si mescola con quello venoso.\n\nIn generale i rettili si riproducono per uova che, per, non vengono covate. Si dividono nei seguenti gruppi: sauri, testuggini, coccodrilli e serpenti.",
+  "__v": 0
+}]

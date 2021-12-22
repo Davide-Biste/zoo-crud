@@ -1,0 +1,91 @@
+[{
+  "_id": {
+    "$oid": "61bc46ef6261d02a913cb986"
+  },
+  "nome": "Ciccio",
+  "idAnimale": "a956",
+  "razza": "Tigre",
+  "classe": "Mammiferi",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61bc47016261d02a913cb988"
+  },
+  "nome": "Bob",
+  "idAnimale": "945e",
+  "razza": "Leone",
+  "classe": "Mammiferi",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61bc478a6261d02a913cb994"
+  },
+  "nome": "Jack",
+  "idAnimale": "4592",
+  "razza": "Serpente",
+  "classe": "Rettili",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61bf3fae3ba03e470973e7d4"
+  },
+  "nome": "Simone",
+  "idAnimale": "a01b",
+  "razza": "Scimpanzè",
+  "classe": "Mammiferi",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c039868251b0b9aa0a2590"
+  },
+  "nome": "Pippo",
+  "idAnimale": "5745",
+  "razza": "Topo",
+  "classe": "Rosicanti",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c039958251b0b9aa0a2595"
+  },
+  "nome": "Jack",
+  "idAnimale": "970b",
+  "razza": "Leone",
+  "classe": "Mammiferi",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c04ea244076cd8b100ac06"
+  },
+  "nome": "Carl",
+  "idAnimale": "326b",
+  "razza": "Piccione",
+  "classe": "Uccelli",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c18bf09992b76f0edcbbd4"
+  },
+  "nome": "Vanko",
+  "idAnimale": "b5e8",
+  "razza": "Falco",
+  "classe": "Uccelli",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c18c359992b76f0edcbbd8"
+  },
+  "nome": "Bred",
+  "idAnimale": "21ea",
+  "razza": "T-Rex",
+  "classe": "Carnivori",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61c199f096a8ada0d6751d3a"
+  },
+  "nome": "Alex",
+  "idAnimale": "0a00",
+  "razza": "Leone",
+  "classe": "Mammiferi",
+  "__v": 0
+}]
